@@ -1,8 +1,28 @@
+from abc import ABC, abstractmethod
+
+
+# Padrão Usado Strategy
+class EstrategiaFrete(ABC):
+    @abstractmethod
+    def calcular(self):
+        pass
+
+
+class FretePac(EstrategiaFrete):
+    def calcular(self):
+        return 15
+
+class FreteSedex(EstrategiaFrete):
+    def calcular(self):
+        return 30
+
+class FreteTransportadora(EstrategiaFrete):
+    def calcular(self):
+        return 20
+
 class CalculadoraFrete:
-    def calcular(self, peso, tipo_frete):
-        if tipo_frete == "PAC":
-            return 15
-        elif tipo_frete == "SEDEX":
-            return 30
-        elif tipo_frete == "Transportadora":
-            return 20
+    def __init__(self, estrategia: EstrategiaFrete):
+        self.estrategia = estrategia
+
+    def calcular(self):
+        return self.estrategia.calcular()
