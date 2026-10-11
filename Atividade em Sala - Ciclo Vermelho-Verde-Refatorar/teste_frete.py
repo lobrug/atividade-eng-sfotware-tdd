@@ -7,7 +7,7 @@
     2. SEDEX (R$30 fixo)
     3. Transportadora (R$20 fixo)
 -Tempo estimado: Red(10 min) Green(10 min) Refactor(25 min)
--Uso de I.A: https://chatgpt.com/share/6acb0608-0308-83e8-b769-03d4fd3d6503
+-Uso de I.A: https://chatgpt.com/share/6acb0706-8d78-83e9-b989-4518ad97edb8
 """
 
 import pytest
