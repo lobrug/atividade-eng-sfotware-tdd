@@ -1,0 +1,7 @@
+Fase Vermelha:
+
+======================================================================================= short test summary info ========================================================================================
+FAILED teste_frete.py::test_frete_pac - AssertionError: assert 0.0 == 15.0
+FAILED teste_frete.py::test_frete_sedex - AssertionError: assert 0.0 == 30.0
+FAILED teste_frete.py::test_frete_transportadora - AssertionError: assert 0.0 == 20.0
+========================================================================================== 3 failed in 0.14s ===========================================================================================
